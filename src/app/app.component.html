@@ -1,3 +1,6 @@
 <p>{{ dataDisplay }}</p>
 
-<app-child (dataGetEvent)="receiveDataInOnInit($event)"></app-child>
+<app-child
+  (dataGetEvent)="receiveDataInOnInit($event)"
+  [dataReceiveByParent]="msgSendToParent"
+></app-child>
